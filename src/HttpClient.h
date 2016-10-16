@@ -140,7 +140,7 @@ public:
     /** Send an additional header line.  This can only be called in between the
       calls to startRequest and finishRequest.
       @param aHeader Header line to send, in its entirety (but without the
-                     trailing CRLF.  E.g. "Authorization: Basic YQDDCAIGES" 
+                     trailing CRLF.  E.g. "Authorization: Basic YQDDCAIGES"
     */
     void sendHeader(const char* aHeader);
 
@@ -171,6 +171,8 @@ public:
 
     void sendHeader(const String& aHeaderName, const int aHeaderValue)
       { sendHeader(aHeaderName.c_str(), aHeaderValue); }
+
+    void setRequestHeader(cons String& header);
 
     /** Send a basic authentication header.  This will encode the given username
       and password, and send them in suitable header line for doing Basic
@@ -345,6 +347,7 @@ protected:
     bool iConnectionClose;
     bool iSendDefaultRequestHeaders;
     String iHeaderLine;
+    String requestHeader;
 };
 
 #endif
