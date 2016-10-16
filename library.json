@@ -1,0 +1,13 @@
+{
+  "name":"ArduinoHttpClientEk",
+  "version":"0.1",
+  "keywords":"http",
+  "description":"A fork of ArduinoHttpClient with simpler support for basic authentication (for POSR only).",
+  "repository":{
+    "type":"git",
+    "url":"https://github.com/aehrisch/ArduinoHttpClient.git"
+  },
+  "frameworks": ["arduino"],
+  "platforms": ["espressif8266"],
+  "homepage": null
+}
