@@ -203,7 +203,7 @@ void HttpClient::sendHeader(const char* aHeaderName, const int aHeaderValue)
     iClient->println(aHeaderValue);
 }
 
-void HttpClient::setRequestHeader(const String& header);
+void HttpClient::setRequestHeader(const String& header)
 {
     requestHeader = header;
 }

@@ -172,7 +172,7 @@ public:
     void sendHeader(const String& aHeaderName, const int aHeaderValue)
       { sendHeader(aHeaderName.c_str(), aHeaderValue); }
 
-    void setRequestHeader(cons String& header);
+    void setRequestHeader(const String& header);
 
     /** Send a basic authentication header.  This will encode the given username
       and password, and send them in suitable header line for doing Basic
